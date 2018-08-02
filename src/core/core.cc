@@ -13,10 +13,11 @@ int main(void) {
 
         cse3330::Connector connector{};
 
-    }
-    catch (std::exception& e) {
+    } catch (std::exception& e) {
 
-        std::cerr << e.what() << std::endl;
+        std::cerr << "Exception caught: "<< e.what() << std::endl;
+        std::cerr << "Press any key to exit" << std::endl;
+        std::getchar();
 
         return EXIT_FAILURE;
 
