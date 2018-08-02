@@ -37,10 +37,10 @@ namespace cse3330 {
 
     private:
 
-        sql::Driver*        driver;
-        sql::Connection*    connection;
-        sql::Statement*     statement;
-        sql::ResultSet*     result_set;
+        sql::Driver*        driver;         // Holds server info
+        sql::Connection*    connection;     // Holds database info
+        sql::Statement*     statement;      // Holds query to send
+        sql::ResultSet*     result_set;     // Holds query response
 
     };
 
