@@ -15,7 +15,7 @@ int main(void) {
 
     } catch (std::exception& e) {
 
-        std::cerr << "Exception caught: "<< e.what() << std::endl;
+        std::cerr << "Exception thrown: "<< e.what() << std::endl;
         std::cerr << "Press any key to exit" << std::endl;
         std::getchar();
 
