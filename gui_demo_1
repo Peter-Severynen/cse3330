@@ -1,0 +1,18 @@
+#include <FL/Fl.H>
+#include <FL/Fl_Window.H>
+#include <FL/Fl_Return_Button.H>
+#include <FL/Fl_Input.H>
+
+using namespace std;
+
+int main()
+{
+        Fl_Window win( 300, 100, "World Cup" );
+        win.begin();
+        Fl_Return_Button *but = new Fl_Return_Button( 70, 40, 100, 25, "Enter" );
+        Fl_Input *query = new Fl_Input(70, 10, 200, 25, "Query:");
+        win.end();
+        win.show();
+
+        return Fl::run();
+}
